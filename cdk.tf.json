@@ -1,0 +1,44 @@
+{
+  "//": {
+    "metadata": {
+      "backend": "local",
+      "stackName": "cdk-v6",
+      "version": "0.21.0"
+    },
+    "outputs": {
+    }
+  },
+  "provider": {
+    "aws": [
+      {
+        "region": "us-west-2"
+      }
+    ]
+  },
+  "resource": {
+    "aws_s3_bucket": {
+      "ShashankBucket": {
+        "//": {
+          "metadata": {
+            "path": "cdk-v6/ShashankBucket",
+            "uniqueId": "ShashankBucket"
+          }
+        },
+        "bucket": "shashank-s3-new-bucket"
+      }
+    }
+  },
+  "terraform": {
+    "backend": {
+      "local": {
+        "path": "/Users/sjaiswal/Desktop/cdk-v6/terraform.cdk-v6.tfstate"
+      }
+    },
+    "required_providers": {
+      "aws": {
+        "source": "aws",
+        "version": "6.0.0"
+      }
+    }
+  }
+}
